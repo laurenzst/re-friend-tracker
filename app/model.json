@@ -246,7 +246,8 @@
                         "url": "/friend",
                         "form": {
                             "form": "FriendForm"
-                        }
+                        },
+                        "page": "friendsactivityspage"
                     }
                 ]
             },
@@ -318,7 +319,8 @@
                         "form": {
                             "form": "ActivityForm"
                         }
-                    },{
+                    },
+                    {
                         "type": "list",
                         "icon": "fa-wheelchair",
                         "color": "red",
@@ -326,6 +328,42 @@
                         "url": "/activity",
                         "form": {
                             "form": "ActivityForm"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "friendsactivityspage",
+                "elementList": [
+                    {
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "EditFriend",
+                        "icon": "fa-user",
+                        "color": "green",
+                        "form": {
+                            "form": "FriendForm"
+                        }
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "AddActivity",
+                        "icon": "fa-calendar",
+                        "color": "green",
+                        "form": {
+                            "form": "AddActivityForm"
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-wheelchair",
+                        "color": "red",
+                        "search": true,
+                        "url": "/friend/:friendKey/activity",
+                        "form": {
+                            "form": "AddActivityForm"
                         }
                     }
                 ]
