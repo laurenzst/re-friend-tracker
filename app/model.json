@@ -152,6 +152,40 @@
                         "name": "Ok"
                     }
                 ]
+            },
+            {
+                "id": "ActivityForm",
+                "title": "Activity",
+                "url": "/activity",
+                "formFieldList": [
+                    {
+                        "id": "name",
+                        "type": "text",
+                        "name": "Activity",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id":   "location",
+                        "type": "autocomplete",
+                        "name": "Location",
+                        "url": "/location",
+                        "form": "LocationForm",
+                        "width": 2
+                    },
+                    {
+                        "type": "deleteButton",
+                        "name": "Delete"
+                    },
+                    {
+                        "type": "cancelButton",
+                        "name": "Cancel"
+                    },
+                    {
+                        "type": "okButton",
+                        "name": "Ok"
+                    }
+                ]
             }
         ],
         "pageList": [
@@ -282,7 +316,7 @@
                         "icon": "fa-wheelchar",
                         "color": "green",
                         "form": {
-                            "form": "AddActivityForm"
+                            "form": "ActivityForm"
                         }
                     },{
                         "type": "list",
@@ -291,7 +325,7 @@
                         "search": true,
                         "url": "/activity",
                         "form": {
-                            "form": "AddActivityForm"
+                            "form": "ActivityForm"
                         }
                     }
                 ]
