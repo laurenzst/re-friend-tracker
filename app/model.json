@@ -114,6 +114,14 @@
                         "width": 2
                     },
                     {
+                        "id":   "location",
+                        "type": "autocomplete",
+                        "name": "Location",
+                        "url": "/location",
+                        "form": "LocationForm",
+                        "width": 2
+                    },
+                    {
                         "type": "deleteButton",
                         "name": "Delete"
                     },
@@ -172,13 +180,20 @@
                         "icon": "fa-cubes",
                         "color": "yellow",
                         "page": "locationspage"
-                    }
-                    ,{
+                    },
+                    {
                         "type": "button",
                         "name": "Groups",
                         "icon": "fa-weixin",
                         "color": "wisteria",
                         "page": "groupspage"
+                    },
+                    {
+                        "type": "button",
+                        "name": "Activity",
+                        "icon": "fa-wheelchair",
+                        "color": "red",
+                        "page": "activityspage"
                     }
                 ]
             },
@@ -259,6 +274,32 @@
                         "url": "/group",
                         "form": {
                             "form": "GroupForm"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "activityspage",
+                "elementList": [
+                    {
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "NewActivity",
+                        "icon": "fa-wheelchar",
+                        "color": "green",
+                        "form": {
+                            "form": "AddActivityForm"
+                        }
+                    },{
+                        "type": "list",
+                        "icon": "fa-wheelchair",
+                        "color": "red",
+                        "search": true,
+                        "url": "/activity",
+                        "form": {
+                            "form": "AddActivityForm"
                         }
                     }
                 ]
